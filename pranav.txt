@@ -51,52 +51,20 @@ User Stories
 
 for Seller:
 
-
-Certainly! User stories are a way to describe the functionality of a system from an end user's perspective. Here are some basic user stories for a seller in an e-commerce website:
-
-Adding a Product:
-
 As a seller, I want to add a new product to my store, including details like title, description, images, price, and quantity, so that customers can view and purchase it.
-
-Editing a Product:
 
 As a seller, I want to edit the details of an existing product, such as its price, description, or images, to keep the product information up-to-date.
 
-Managing Inventory:
-
-As a seller, I want to view and manage my product inventory, including tracking stock levels and receiving low stock alerts, to ensure products are always available.
-
-Processing Orders:
+As a seller, I want to view and manage my product inventory.
 
 As a seller, I want to receive notifications for new orders, view order details, and confirm, pack, and ship orders to fulfill customer purchases.
-Handling Returns:
 
 As a seller, I want to handle customer returns by providing a smooth return process, including approving return requests and processing refunds.
 
-Customer Interaction:
-
 As a seller, I want to respond to customer inquiries and messages promptly, ensuring good communication and customer satisfaction.
 
-Managing Reviews:
+As a seller, I want to view and manage customer reviews and ratings for my products.
 
-As a seller, I want to view and manage customer reviews and ratings for my products, including responding to customer feedback and addressing any concerns.
-
-Promotions and Discounts:
-
-As a seller, I want to create and manage promotional campaigns, set up discount codes, and offer special deals to attract more customers.
-Viewing Sales Reports:
-
-As a seller, I want to access sales reports, including revenue, best-selling products, and customer demographics, to analyze the performance of my store.
-
-Integration with Shipping:
-
-As a seller, I want to integrate with shipping carriers to calculate real-time shipping costs, print shipping labels, and track shipments for accurate and timely delivery.
-
-Managing Account Settings:
+As a seller, I want feedback from customer.
 
 As a seller, I want to securely log in, recover my password if needed, and manage my account settings to ensure the security of my seller account.
-
-Handling Multi-channel Sales:
-
-As a seller, I want to integrate with various sales channels, such as social media or other e-commerce platforms, to reach a broader audience and manage sales from different sources.
-These user stories cover the basic functionalities that a seller would need to effectively manage their products, orders, and interactions with customers on an e-commerce platform.
