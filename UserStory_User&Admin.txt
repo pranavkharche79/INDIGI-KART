@@ -1,0 +1,24 @@
+User
+
+1. As a user, I want to view my order history so that I can track my purchases and easily make returns or exchanges.
+2. As a user, I want to provide customer feedback about my experience with the platform.
+3. As a user, I want to be able to view and filter products based on various criteria, such as category, price, and rating.
+4. As a registered user, I want a secure and straightforward login process to access my account quickly.
+5. As a new user, I want an intuitive registration process with clear instructions to create an account easily.
+6. As a user, I want the ability to easily review and modify the items in my cart before proceeding to checkout.
+7. As a user, I want to see a summary of the total cost, including taxes and shipping fees, in my shopping cart.
+
+Admin
+
+1. As an admin, I want a secure and straightforward login process to access the admin dashboard.
+2. As an administrator, I want a comprehensive dashboard that provides a quick overview of key metrics, such as sales, inventory status, and customer activity.
+3. As an admin, I want an easy-to-use interface for adding new products to the catalogue, including fields for product names, descriptions, prices, and images.
+4. As an administrator, I want the ability to edit existing product details, such as price, description, and inventory levels, seamlessly.
+5. As an admin, I want to efficiently create, edit, and delete product categories for better organization of the product catalogue.
+6. As an administrator, I want the option to assign multiple categories to a single product for enhanced search and filtering capabilities.
+7. As an admin, I want a user-friendly interface to monitor and manage inventory levels, with alerts for low-stock items.
+8. As an administrator, I want the ability to easily update product quantities, mark products as out of stock, or temporarily disable them from the website.
+9. As an admin, I want a detailed overview of sales data, including the ability to filter by date, product, and customer.
+10. As an administrator, I want the option to track and manage customer orders, view order details, and process refunds or cancellations if needed.
+11. As an administrator, I want the ability to export reports in various formats for further analysis.
+
