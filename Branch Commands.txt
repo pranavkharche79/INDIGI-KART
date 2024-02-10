@@ -1,0 +1,13 @@
+GitBranching Commands
+
+1. git clone
+2. cd
+3. git checkout -b YourBranchName
+4. git add .
+5. git commit -m"YourBranchName"
+6. git status
+7. git push  --set-upstream origin YourBranchName
+8. git push
+9. git pull origin main  
+
+For Fork :- Sync fork---> update
