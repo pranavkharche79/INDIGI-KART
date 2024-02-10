@@ -8,4 +8,6 @@ GitBranching Commands
 6. git status
 7. git push  --set-upstream origin YourBranchName
 8. git push
-9. git pull origin main
+9. git pull origin main  
+
+For Fork :- Sync fork---> update
