@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Admin {
-	//admin class
+	
 	@Id
 	private String aid;
 	private String uname;
