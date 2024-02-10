@@ -93,9 +93,4 @@ public class Customer {
 		return "Customer [id=" + id + ", name=" + name + ", city=" + city + ", userid=" + userid + ", passwd=" + passwd
 				+ ", phone=" + phone + ", gender=" + gender + "]";
 	}
-	
-	
-	//new class added by arjun
-	// brach arjjun
-	
 }
