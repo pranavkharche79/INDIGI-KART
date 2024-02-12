@@ -1,27 +1,37 @@
 package com.indigikart.model;
 
 import jakarta.persistence.Entity;
-
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Admin {
+public class Admin extends login{
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String aid;
-	private String uname;
-	private String passwd;
+	private String userid;
+	private String pwd;
 	
 	public Admin() {
 		super();
 	}
 
-	public Admin(String aid, String uname, String passwd) {
-		super();
+	public Admin(String aid, String userid, String pwd) {
+		super(userid,pwd,"Admin");
 		this.aid = aid;
-		this.uname = uname;
-		this.passwd = passwd;
+//		this.userid = userid;
+//		this.pwd = pwd;
 	}
+	
+	
+
+//	public Admin(String userid, String pwd) {
+//		super();
+//		this.userid = userid;
+//		this.pwd = pwd;
+//	}
 
 	public String getAid() {
 		return aid;
@@ -31,25 +41,25 @@ public class Admin {
 		this.aid = aid;
 	}
 
-	public String getUname() {
-		return uname;
+	public String getuserid() {
+		return userid;
 	}
 
-	public void setUname(String uname) {
-		this.uname = uname;
+	public void setuserid(String userid) {
+		this.userid = userid;
 	}
 
-	public String getPasswd() {
-		return passwd;
+	public String getpwd() {
+		return pwd;
 	}
 
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
+	public void setpwd(String pwd) {
+		this.pwd = pwd;
 	}
 
 	@Override
 	public String toString() {
-		return "Admin [aid=" + aid + ", uname=" + uname + ", passwd=" + passwd + "]";
+		return "Admin [aid=" + aid + ", userid=" + userid + ", pwd=" + pwd + "]";
 	}
 	
 	
