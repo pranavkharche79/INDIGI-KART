@@ -1,5 +1,6 @@
 package com.indigikart.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.GeneratedValue;
@@ -7,37 +8,64 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Customer {
+public class Customer extends login{
+	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
+	
+	@Column(nullable = false)
 	private String name;
+	
+	@Column(nullable = false)
 	private String city;
+	
+	@Column(nullable = false)
 	private String userid;
-	private String passwd;
+	
+	@Column(nullable = false , unique = true)
+	private String pwd;
+	
+	@Column(nullable = false , unique = true , length = 10)
 	private String phone;
+	
+	@Column(nullable = false , unique = true)
+	private String email;
+	
+	@Column(nullable = false)
 	private String gender;
 	
 	public Customer() {
 		super();
 	}
 
-	public Customer(int id, String name, String city, String userid, String passwd, String phone, String gender) {
+	public Customer(Long id, String name, String city, String userid, String pwd, String phone, String email,
+			String gender) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.city = city;
 		this.userid = userid;
-		this.passwd = passwd;
+		this.pwd = pwd;
 		this.phone = phone;
+		this.email = email;
 		this.gender = gender;
 	}
 
-	public int getId() {
+	public Customer(String name, String city, String userid, String pwd, String phone, String email, String gender) {
+		super(userid,pwd,"Customer");
+		this.name = name;
+		this.city = city;
+		this.phone = phone;
+		this.email = email;
+		this.gender = gender;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -65,12 +93,12 @@ public class Customer {
 		this.userid = userid;
 	}
 
-	public String getPasswd() {
-		return passwd;
+	public String getPwd() {
+		return pwd;
 	}
 
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 
 	public String getPhone() {
@@ -79,6 +107,14 @@ public class Customer {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getGender() {
@@ -91,7 +127,8 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", name=" + name + ", city=" + city + ", userid=" + userid + ", passwd=" + passwd
-				+ ", phone=" + phone + ", gender=" + gender + "]";
+		return "Customer [id=" + id + ", name=" + name + ", city=" + city + ", userid=" + userid + ", pwd=" + pwd
+				+ ", phone=" + phone + ", email=" + email + ", gender=" + gender + "]";
 	}
+	
 }
