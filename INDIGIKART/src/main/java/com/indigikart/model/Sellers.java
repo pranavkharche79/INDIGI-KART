@@ -26,6 +26,8 @@ public class Sellers extends login {
 	@Column(nullable = false)
 	private String city;
 	
+	private String certi_url;
+	
 
 	private LocalDate createdOn;
 	
@@ -55,7 +57,7 @@ public class Sellers extends login {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Sellers(int sid, String applicationno, String certificate_no, String giappno, String city,
+	public Sellers(int sid, String applicationno, String certificate_no, String giappno, String city, String certi_url,
 			LocalDate createdOn, boolean isActive, boolean isVerified, String name, String phone, String email,
 			String pwd, String userid) {
 		super(userid,pwd,"Seller");
@@ -64,12 +66,15 @@ public class Sellers extends login {
 		this.certificate_no = certificate_no;
 		this.giappno = giappno;
 		this.city = city;
+		this.certi_url = certi_url;
 		this.createdOn = createdOn;
 		this.isActive = isActive;
 		this.isVerified = isVerified;
 		this.name = name;
 		this.phone = phone;
 		this.email = email;
+		this.pwd = pwd;
+		this.userid = userid;
 	}
 
 	public int getSid() {
@@ -110,6 +115,14 @@ public class Sellers extends login {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getCerti_url() {
+		return certi_url;
+	}
+
+	public void setCerti_url(String certi_url) {
+		this.certi_url = certi_url;
 	}
 
 	public LocalDate getCreatedOn() {
@@ -179,9 +192,9 @@ public class Sellers extends login {
 	@Override
 	public String toString() {
 		return "Sellers [sid=" + sid + ", applicationno=" + applicationno + ", certificate_no=" + certificate_no
-				+ ", giappno=" + giappno + ", city=" + city + ", createdOn=" + createdOn + ", isActive=" + isActive
-				+ ", isVerified=" + isVerified + ", name=" + name + ", phone=" + phone + ", email=" + email + ", pwd="
-				+ pwd + ", userid=" + userid + "]";
+				+ ", giappno=" + giappno + ", city=" + city + ", certi_url=" + certi_url + ", createdOn=" + createdOn
+				+ ", isActive=" + isActive + ", isVerified=" + isVerified + ", name=" + name + ", phone=" + phone
+				+ ", email=" + email + ", pwd=" + pwd + ", userid=" + userid + "]";
 	}
 	
 }

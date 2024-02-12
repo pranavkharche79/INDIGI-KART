@@ -21,17 +21,17 @@ public class Admin extends login{
 	public Admin(String aid, String userid, String pwd) {
 		super(userid,pwd,"Admin");
 		this.aid = aid;
-//		this.userid = userid;
-//		this.pwd = pwd;
+		this.userid = userid;
+		this.pwd = pwd;
 	}
 	
 	
 
-//	public Admin(String userid, String pwd) {
-//		super();
-//		this.userid = userid;
-//		this.pwd = pwd;
-//	}
+	public Admin(String userid, String pwd) {
+		super();
+		this.userid = userid;
+		this.pwd = pwd;
+	}
 
 	public String getAid() {
 		return aid;
