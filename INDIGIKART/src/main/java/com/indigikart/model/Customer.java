@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Customer extends login{
+public class Customer{
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -53,9 +53,11 @@ public class Customer extends login{
 	}
 
 	public Customer(String name, String city, String userid, String pwd, String phone, String email, String gender) {
-		super(userid,pwd,"Customer");
+		super();
 		this.name = name;
 		this.city = city;
+		this.userid = userid;
+		this.pwd = pwd;
 		this.phone = phone;
 		this.email = email;
 		this.gender = gender;
@@ -130,5 +132,7 @@ public class Customer extends login{
 		return "Customer [id=" + id + ", name=" + name + ", city=" + city + ", userid=" + userid + ", pwd=" + pwd
 				+ ", phone=" + phone + ", email=" + email + ", gender=" + gender + "]";
 	}
+
+	
 	
 }
