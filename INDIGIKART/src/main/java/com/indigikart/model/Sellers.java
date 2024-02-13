@@ -9,7 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Sellers extends login {
+public class Sellers {
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int sid;
@@ -20,15 +20,14 @@ public class Sellers extends login {
 	@Column(name = "gi_certifino",nullable = false)
 	private String certificate_no;
 	
-	@Column(name = "gi_appno",nullable = false)
-	private String giappno;
+	@Column(name = "gi_indi_no",nullable = false)
+	private String gi_indication_no;
 	
 	@Column(nullable = false)
 	private String city;
 	
 	private String certi_url;
 	
-
 	private LocalDate createdOn;
 	
 	@Column(columnDefinition = "BOOLEAN DEFAULT '1'")
@@ -57,14 +56,33 @@ public class Sellers extends login {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Sellers(int sid, String applicationno, String certificate_no, String giappno, String city, String certi_url,
-			LocalDate createdOn, boolean isActive, boolean isVerified, String name, String phone, String email,
-			String pwd, String userid) {
-		super(userid,pwd,"Seller");
+	public Sellers(int sid, String applicationno, String certificate_no, String gi_indication_no, String city,
+			String certi_url, LocalDate createdOn, boolean isActive, boolean isVerified, String name, String phone,
+			String email, String pwd, String userid) {
+		super();
 		this.sid = sid;
 		this.applicationno = applicationno;
 		this.certificate_no = certificate_no;
-		this.giappno = giappno;
+		this.gi_indication_no = gi_indication_no;
+		this.city = city;
+		this.certi_url = certi_url;
+		this.createdOn = createdOn;
+		this.isActive = isActive;
+		this.isVerified = isVerified;
+		this.name = name;
+		this.phone = phone;
+		this.email = email;
+		this.pwd = pwd;
+		this.userid = userid;
+	}
+
+	public Sellers(String applicationno, String certificate_no, String gi_indication_no, String city, String certi_url,
+			LocalDate createdOn, boolean isActive, boolean isVerified, String name, String phone, String email,
+			String pwd, String userid) {
+		super();
+		this.applicationno = applicationno;
+		this.certificate_no = certificate_no;
+		this.gi_indication_no = gi_indication_no;
 		this.city = city;
 		this.certi_url = certi_url;
 		this.createdOn = createdOn;
@@ -101,12 +119,12 @@ public class Sellers extends login {
 		this.certificate_no = certificate_no;
 	}
 
-	public String getGiappno() {
-		return giappno;
+	public String getGi_indication_no() {
+		return gi_indication_no;
 	}
 
-	public void setGiappno(String giappno) {
-		this.giappno = giappno;
+	public void setGi_indication_no(String gi_indication_no) {
+		this.gi_indication_no = gi_indication_no;
 	}
 
 	public String getCity() {
@@ -192,9 +210,9 @@ public class Sellers extends login {
 	@Override
 	public String toString() {
 		return "Sellers [sid=" + sid + ", applicationno=" + applicationno + ", certificate_no=" + certificate_no
-				+ ", giappno=" + giappno + ", city=" + city + ", certi_url=" + certi_url + ", createdOn=" + createdOn
-				+ ", isActive=" + isActive + ", isVerified=" + isVerified + ", name=" + name + ", phone=" + phone
-				+ ", email=" + email + ", pwd=" + pwd + ", userid=" + userid + "]";
+				+ ", gi_indication_no=" + gi_indication_no + ", city=" + city + ", certi_url=" + certi_url
+				+ ", createdOn=" + createdOn + ", isActive=" + isActive + ", isVerified=" + isVerified + ", name="
+				+ name + ", phone=" + phone + ", email=" + email + ", pwd=" + pwd + ", userid=" + userid + "]";
 	}
 	
 }

@@ -6,11 +6,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Admin extends login{
+public class Admin{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String aid;
+	private Long aid;
 	private String userid;
 	private String pwd;
 	
@@ -18,42 +18,34 @@ public class Admin extends login{
 		super();
 	}
 
-	public Admin(String aid, String userid, String pwd) {
-		super(userid,pwd,"Admin");
+	public Admin(Long aid, String userid, String pwd) {
+		super();
 		this.aid = aid;
 		this.userid = userid;
 		this.pwd = pwd;
 	}
-	
-	
 
-	public Admin(String userid, String pwd) {
-		super();
-		this.userid = userid;
-		this.pwd = pwd;
-	}
-
-	public String getAid() {
+	public Long getAid() {
 		return aid;
 	}
 
-	public void setAid(String aid) {
+	public void setAid(Long aid) {
 		this.aid = aid;
 	}
 
-	public String getuserid() {
+	public String getUserid() {
 		return userid;
 	}
 
-	public void setuserid(String userid) {
+	public void setUserid(String userid) {
 		this.userid = userid;
 	}
 
-	public String getpwd() {
+	public String getPwd() {
 		return pwd;
 	}
 
-	public void setpwd(String pwd) {
+	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
 
@@ -61,6 +53,7 @@ public class Admin extends login{
 	public String toString() {
 		return "Admin [aid=" + aid + ", userid=" + userid + ", pwd=" + pwd + "]";
 	}
+
 	
 	
 	
