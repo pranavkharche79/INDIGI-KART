@@ -9,3 +9,7 @@ Repository: [https://github.com/pranavkharche79/Indigikart-Backend](https://gith
 ## Frontend (REACT JS)
 
 Repository: [https://github.com/pranavkharche79/Indigikart-Frontend](https://github.com/pranavkharche79/Indigikart-Frontend).
+
+## Live Demo
+
+Link:- [https://indigi-kart.vercel.app](https://indigi-kart.vercel.app).
