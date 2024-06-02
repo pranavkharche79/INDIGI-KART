@@ -1,6 +1,6 @@
 # INDIGI-CART
 
-You can also see our code on give Repositories
+You can also see our code on give Repositories 
 
 ## Backend (JAVA)
 
