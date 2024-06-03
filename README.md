@@ -13,3 +13,14 @@ Repository: [https://github.com/pranavkharche79/Indigikart-Frontend](https://git
 ## Live Demo
 
 Link:- [https://indigi-kart.vercel.app](https://indigi-kart.vercel.app).
+
+<br/>
+<br/>
+
+## Home Page
+<img src="/Images/IndiGI-Kart.png"/>
+<br/>
+
+### Pagination
+<img src="/Images/pagination.png"/>
+<br/>
